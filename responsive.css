@@ -130,6 +130,18 @@
 
 
 @media (max-width: 550px) {
+
+    .hero__bg{
+       
+    }
+    .hero__title-wrapper{
+        bottom: 150px;
+    }
+
+    .hero{
+        height: 600px;
+    }
+    
     main .container{
      padding-left: 10px;
      padding-right: 10px;
