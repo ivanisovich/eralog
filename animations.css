@@ -1,0 +1,169 @@
+.hero__title span.animate {
+    opacity: 0;
+    display: inline-block;
+    animation: fadein 0.65s cubic-bezier(.23, 1, .32, 1) forwards;
+}
+
+.hero__title span:nth-child(3),
+.hero__title span:nth-child(4),
+.hero__title span:nth-child(6),
+.hero__title span:nth-child(7) {
+    animation-delay: 0.1s;
+}
+
+
+
+.hero__subtitle.animate {
+    opacity: 0;
+    animation: fadein 0.65s cubic-bezier(.23, 1, .32, 1) forwards;
+    animation-delay: 0.05s;
+}
+
+.hero .button.animate {
+    display: block;
+    width: fit-content;
+    opacity: 0;
+    animation: fadein 0.65s cubic-bezier(.23, 1, .32, 1) forwards;
+    animation-delay: 0.4s;
+}
+
+.clients-list img {
+    opacity: 0;
+}
+
+.clients-list img.animate {
+    opacity: 0;
+    animation: slideTop 0.65s cubic-bezier(.23, 1, .32, 1) forwards;
+}
+
+.clients-list img:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.clients-list img:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.clients-list img:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.clients-list img:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+.our-clients span {
+    opacity: 0;
+}
+
+.our-clients span.animate {
+    opacity: 0;
+    display: inline-block;
+    animation: slideTopText 0.65s cubic-bezier(.23, 1, .32, 1) forwards;
+}
+
+.our-clients span:nth-child(2) {
+    animation-delay: 0.07s;
+}
+
+.our-clients span:nth-child(3) {
+    animation-delay: 0.14s;
+}
+
+.our-clients span:nth-child(4) {
+    animation-delay: 0.21s;
+}
+
+.our-clients span:nth-child(5) {
+    animation-delay: 0.28s;
+}
+
+.our-clients span:nth-child(6) {
+    animation-delay: 0.35s;
+}
+
+.our-clients span:nth-child(7) {
+    animation-delay: 0.42s;
+}
+
+.swiper-slide,
+.service,
+.feature {
+    opacity: 0;
+}
+
+.swiper-slide.animate,
+.service.animate,
+.feature.animate{
+    animation: slideArticle 0.65s cubic-bezier(.23, 1, .32, 1) forwards;
+
+}
+
+.expertise__truck{
+    opacity: 0;
+}
+
+.expertise__truck.animate{
+    animation: truckSlide 0.65s cubic-bezier(.23, 1, .32, 1) forwards;
+
+}
+
+@keyframes fadein {
+    from {
+        transform: translate3d(60px, 0px, 0px) scale(.9, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(-10deg, 0deg);
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes slideTop {
+    from {
+        transform: translate3d(0px, 30px, 0px) scale(1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes slideTopText {
+    from {
+        transform: translate3d(0px, 10px, 0px) scale(1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes slideArticle {
+    from {
+        transform: translate3d(0px, 0px, 0px) scale(1.2, 1.2) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes truckSlide {
+    from {
+        transform: translate3d(60px, 0px, 0px) scale(1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(8deg, 0deg);
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+}

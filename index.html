@@ -2,148 +2,307 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./normalize.css">
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Грузоперевозки по России и СНГ</title>
+  <link rel="stylesheet" href="./normalize.css" />
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./responsive.css">
+  <link rel="stylesheet" href="./animations.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="shortcut icon" href="https://static.tildacdn.com/tild3531-3732-4932-b061-656664633132/favicon.ico"
+    type="image/x-icon">
 </head>
 
 <body>
-    <header class="header ">
-        <div class="container">
-            <img class="header__logo" src="/images/logo.svg" alt="Eralogistics транспортно логистическая компания">
-            <nav class="header__navigation">
-                <a href="#services">Услуги</a>
-                <a href="#calculator">Цены</a>
-                <a href="#form">Оставить заявку</a>
-            </nav>
-            <a class="header__contacts button" href="">+7 495 023 12 32</a>
+  <header class="header container">
+    <div class="header-inner">
+      <img class="header__logo-mobile" src="./images/logo-mob.png"
+        alt="Eralogistics транспортно логистическая компания">
+      <img class="header__logo" src="./images/logo.svg" alt="Eralogistics транспортно логистическая компания" />
+      <nav class="header__navigation">
+        <a href="#services">Услуги</a>
+        <a href="#calculator">Цены</a>
+        <a href="#form">Оставить заявку</a>
+      </nav>
+      <div class="header__contacts">
+        <a href="" class="header__mail">info@eralog.ru</a>
+        <a class="button" href="">+7 495 023 12 32</a>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img class="hero__bg" src="./images/hero_bg.png" alt="" />
+      <div class="container">
+        <div class="hero__title-wrapper">
+          <h1 class="hero__title">
+            <span><strong>ГРУЗОПЕРЕВОЗКИ</strong></span> <br />
+            <span>ПО</span> <span>РОССИИ</span> <br />
+            <span>И</span> <span>СНГ</span>
+          </h1>
+          <p class="hero__subtitle">
+            Быстрая и надежная доставка <br> вашего груза
+            от двери <br /> до двери
+          </p>
+          <a class="hero__link button" href="#calculator">Рассчитать стоимость</a>
         </div>
-    </header>
-    <main>
-        <section class="hero">
-            <img class="hero__bg" src="./images/hero_bg.jpg" alt="">
-            <div class="container">
-                <div class="hero__title-wrapper ">
-                    <h1 class="hero__title">
-                        ГРУЗОПЕРЕВОЗКИ <br>
-                        ПО РОССИИ <br>
-                        И ЗА РУБЕЖОМ
-                    </h1>
-                    <p class="hero__subtitle">Быстрая и надежная доставка вашего груза <br> от двери до двери</p>
-                    <a class="hero__link button" href="#calculator">Рассчитать стоимость</a>
-                </div>
+      </div>
+    </section>
+
+    <div class="features-wrapper">
+      <section class="our-clients container">
+        <h2><span>Более</span> <span>200</span> <span>проектов</span> <span>и</span> <span><strong>150+</strong></span>
+            <span><strong>довольных</strong></span> <span><strong>клиентов</strong></span></h2>
+
+        <div class="clients-list">
+          <img src="./images/20.jpg" alt="">
+          <img src="./images/21.jpg" alt="">
+          <img src="./images/15.jpg" alt="">
+          <img src="./images/blob.png" alt="">
+          <img src="./images/blob (1).png" alt="">
+        </div>
+      </section>
+
+      <section class="features container">
+        <h2 class="section-title">Почему нас выбирают</h2>
+        <p class="section-subtitle">Превосходство в деталях: надежность, скорость, удобство оплаты</p>
+
+        <div class="features__list">
+          <article class="feature">
+            <div class="feature__icon">
+              <img src="./images/delivery-truck.png" alt="" />
             </div>
-        </section>
 
-        <section class="features container">
-            <!-- <h2 class="section-title">Почему нас выбирают</h2> -->
-
-            <div class="features__list">
-                <article class="feature">
-                    <img src="./images/delivery-truck.png" alt="">
-                    <p>Срочная подача автомобиля</p>
-                </article>
-                <article class="feature">
-                    <img src="./images/save-money.png" alt="">
-                    <p>Любой способ оплаты</p>
-                </article>
-                <article class="feature">
-                    <img src="./images/driver.png" alt="">
-                    <p>Опытные водители-экспедиторы</p>
-                </article>
-                <article class="feature">
-                    <img src="./images/24-7.png" alt="">
-                    <p>Работаем 24/7</p>
-                </article>
+            <h3>Срочная подача</h3>
+            <p>Быстро и в срок: ваш груз будет доставлен точно в назначенное время.</p>
+          </article>
+          <article class="feature">
+            <div class="feature__icon">
+              <img src="./images/save-money.png" alt="" />
             </div>
-        </section>
 
-        <section id="services" class="services container">
-            <h2 class="section-title">Наши услуги</h2>
-
-            <div class="services__list">
-                <article class="service">
-                    <img src="./images/service-1.png" alt="">
-                    <div>
-                        <p>Перевозки <br> выделенным транспортом</p>
-                        <a href="#form" class="button">Оставить заявку</a>
-                    </div>
-                </article>
-                <article class="service">
-                    <img src="./images/service-2.png" alt="">
-                    <div>
-                        <p>Перевозки <br> сборным грузом</p>
-                        <a href="#form" class="button">Оставить заявку</a>
-                    </div>
-                </article>
-                <article class="service">
-                    <img src="./images/service-3.png" alt="">
-                    <div>
-                        <p>Домашние переезды</p>
-                        <a href="#form" class="button">Оставить заявку</a>
-                    </div>
-                </article>
-                <article class="service">
-                    <img src="./images/service-4.jpg" alt="">
-                    <div>
-                        <p>Международные перевозки</p>
-                        <a href="#form" class="button">Оставить заявку</a>
-                    </div>
-                </article>
+            <h3>Любой способ оплаты</h3>
+            <p>Удобство и гибкость в расчетах для вашего комфорта</p>
+          </article>
+          <article class="feature">
+            <div class="feature__icon">
+              <img src="./images/driver.png" alt="" />
             </div>
-        </section>
-        <section id="calculator" class="calculator-section">
-            <img class="calculator__bg" src="./images/d32d758ec06061533062321f80166070.jfif" alt="">
 
-            <div class="calculator">
-                <h2 class="section-title">Калькулятор стоимости</h2>
-
-                <div class="calculator__inputs">
-                    <input placeholder="Москва" type="text">
-                    <input placeholder="Алматы" type="text">
-                    <input placeholder="Домашний переезд" type="text">
-                </div>
-
-                <button class="button">Расчитать</button>
-                <span class="calculator__summary"></span>
+            <h3>Опытные водители</h3>
+            <p>На дороге как дома: доверьте ваш груз профессионалам с большим опытом.</p>
+          </article>
+          <article class="feature">
+            <div class="feature__icon">
+              <img src="./images/24-7.png" alt="" />
             </div>
-        </section>
-        <section id="form" class="contact-us">
-            <div class="form-wrapper container">
-                <h2 class="section-title">Оставить заявку</h2>
 
-                <form class="form" action="">
-                    <input placeholder="Ваше Имя" type="text">
-                    <input placeholder="Телефон" type="text">
-                    <input placeholder="Почта" type="text">
-                    <textarea placeholder="Ваши пожелания" name="" id="" cols="30" rows="10"></textarea>
+            <h3>Работаем 24/7</h3>
+            <p>Ваш надежный партнер в мире грузоперевозок круглосуточно и без выходных</p>
+          </article>
+        </div>
+      </section>
 
-                    <button class="button">Отправить</button>
-                </form>
+      <div class="features-bg"></div>
+    </div>
+
+
+    <section id="services" class="services">
+      <div class="container">
+        <h2 class="section-title">Наши услуги</h2>
+
+        <div class="services__list">
+          <article class="service">
+            <img src="./images/service-1.png" alt="" />
+            <div>
+              <p>
+                Перевозки <br />
+                выделенным транспортом
+              </p>
+              <a href="#form" class="button">Оставить заявку</a>
             </div>
-        </section>
-    </main>
+          </article>
+          <article class="service">
+            <img src="./images/service-2.png" alt="" />
+            <div>
+              <p>
+                Перевозки <br />
+                сборным грузом
+              </p>
+              <a href="#form" class="button">Оставить заявку</a>
+            </div>
+          </article>
+          <article class="service">
+            <img src="./images/service-3.png" alt="" />
+            <div>
+              <p>Домашние переезды</p>
+              <a href="#form" class="button">Оставить заявку</a>
+            </div>
+          </article>
+          <article class="service">
+            <img src="./images/service-4.jpg" alt="" />
+            <div>
+              <p>Международные перевозки</p>
+              <a href="#form" class="button">Оставить заявку</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="gallery">
+      <div class="container">
+        <h2 class="section-title">Автопарк</h2>
+        <p class="section-subtitle">Независимо от размера или специфики вашего груза, у нас есть подходящее транспортное
+          средство для его перевозки.</p>
 
-    <script>
-        const smoothLinks = document.querySelectorAll('a[href^="#"]');
-        for (let smoothLink of smoothLinks) {
-            smoothLink.addEventListener("click", function (e) {
-                e.preventDefault();
-                const id = smoothLink.getAttribute("href");
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="https://torgprint.ru/upload/iblock/a41/runo1yiv4cp8y8fo3i6jmkupiwbtmvfx.png" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, voluptate!</p>
+            </div>
+            <div class="swiper-slide">
+              <img src="https://torgprint.ru/upload/iblock/a41/runo1yiv4cp8y8fo3i6jmkupiwbtmvfx.png" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, voluptate!</p>
 
-                document.querySelector(id).scrollIntoView({
-                    behavior: "smooth",
-                    block: "start",
-                });
-            });
-        }
-    </script>
+            </div>
+            <div class="swiper-slide">
+              <img src="https://torgprint.ru/upload/iblock/a41/runo1yiv4cp8y8fo3i6jmkupiwbtmvfx.png" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, voluptate!</p>
+
+            </div>
+            <div class="swiper-slide">
+              <img src="https://torgprint.ru/upload/iblock/a41/runo1yiv4cp8y8fo3i6jmkupiwbtmvfx.png" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, voluptate!</p>
+
+            </div>
+            <div class="swiper-slide">
+              <img src="https://torgprint.ru/upload/iblock/a41/runo1yiv4cp8y8fo3i6jmkupiwbtmvfx.png" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, voluptate!</p>
+
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+        </div>
+
+        <div class="calculator">
+          <h2 class="section-title">Рассчитать стоимость</h2>
+
+          <div class="calculator__inputs">
+            <input placeholder="Москва" type="text" />
+            <input placeholder="Алматы" type="text" />
+            <input placeholder="Домашний переезд" type="text" />
+          </div>
+
+          <button class="button">Расчитать</button>
+          <span class="calculator__summary"></span>
+        </div>
+      </div>
+
+      <div class="gallery-bg"></div>
+    </section>
+
+    <section class="expertise">
+      <div class="container">
+        <div class="expertise__truck">
+          <img src="./images/truck.png" alt="">
+        </div>
+        <div class="expertise__text">
+          <h2>Нам доверяют</h2>
+          <p>Мы обладаем обширным опытом в управлении логистикой, от закупки до доставки. Используя передовые
+            технологии, мы оптимизируем каждый этап процесса, гарантируя своевременную и бюджетную доставку товаров
+            наших клиентов.
+          </p>
+
+          <div class="metrics">
+            <div class="metrics-items">
+              <h3 class="counter" data-target="25">
+                0+
+              </h3>
+              <span>Размер Автопарка</span>
+            </div>
+            <div class="metrics-items">
+              <h3 class="counter" data-target="250">
+                0+
+              </h3>
+              <span>Успешных проектов</span>
+            </div>
+            <div class="metrics-items">
+              <h3 class="counter" data-target="150">
+                0+
+              </h3>
+              <span>Довольных клиентов</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="map">
+      <div style="position:relative;overflow:hidden;">
+        <a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a>
+        <a href="https://yandex.ru/maps/213/moscow/?from=mapframe&ll=37.435952%2C55.636948&mode=usermaps&source=mapframe&um=constructor%3A80892c59f50c4753d287dc653737e845413e3eeb0f9756be92d088989ca7f21d&utm_medium=mapframe&utm_source=maps&z=13" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс Карты — транспорт, навигация, поиск мест</a>
+        <iframe id="map" data-src="https://yandex.ru/map-widget/v1/?from=mapframe&ll=37.495952%2C55.636948&mode=usermaps&source=mapframe&um=constructor%3A80892c59f50c4753d287dc653737e845413e3eeb0f9756be92d088989ca7f21d&utm_source=mapframe&z=13&scroll=false" width="100%" height="800" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+    </div>
+      <div class="container">
+        <div class="form-wrapper">
+          <h2 class="section-title">Оставить заявку</h2>
+
+          <form class="form" action="">
+            <input placeholder="Ваше Имя" type="text" />
+            <input placeholder="Телефон" type="text" />
+            <input placeholder="Почта" type="text" />
+            <textarea placeholder="Ваши пожелания" name="" id="" cols="30" rows="10"></textarea>
+
+            <button class="button">Отправить</button>
+          </form>
+        </div>
+      </div>
+
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <img class="footer__logo" src="./images/_38.svg" alt="Eralogistics транспортно логистическая компания" />
+
+        <div class="footer__contacts ">
+          <span>Менеджеры:</span>
+          <span>8-495-111-77-75</span>
+          <span>8-495-111-77-75</span>
+        </div>
+
+        <div class="footer__contacts ">
+          <span>Логисты:</span>
+          <span>8-495-111-77-75</span>
+          <span>8-495-111-77-75</span>
+        </div>
+
+        <span class="footer__adress">БЦ Румянцево, корпус Г</span>
+      </div>
+
+    </footer>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./script.js">
+   
+  </script>
 </body>
 
 </html>
