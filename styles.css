@@ -69,6 +69,8 @@ body {
   gap: 20px;
   align-items: center;
   background: white;
+  z-index: 20;
+  position: relative;
 }
 
 .header__logo {
@@ -77,6 +79,7 @@ body {
   border-right: 1px solid rgba(0, 0, 0, 0.34);
 }
 
+.header__contacts-mobile,
 .header__logo-mobile{
   display: none;
 }
