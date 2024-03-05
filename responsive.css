@@ -96,15 +96,30 @@
         margin-bottom: 60px;
     }
 
+    .features__list{
+        column-gap: 20px;
+    }
+
+    .feature{
+        width: 40%;
+    }
+
+    .services__list{
+        column-gap: 20px;
+    }
+
     .service{
+        width: 47%;
         flex-direction: column;
         padding-bottom: 50px;
         padding-left: 0px;
     }
     
     .service img{
+        width: 100%;
         border-bottom-right-radius: 0px;
         border-top-left-radius: 20px;
+        object-position: right;
     }
 
     #map{
@@ -129,7 +144,7 @@
 }
 
 
-@media (max-width: 550px) {
+@media (max-width: 570px) {
 
     .hero__bg{
        
@@ -203,6 +218,22 @@
 
     .header__logo-mobile{
 
+    }   
+    .feature{
+        padding: 10px;
+    
+    }
+
+    .feature h3{
+        font-size: 16px;
+    }
+
+    .feature p{
+        font-size: 14px;
+    }
+
+    .service .button{
+        padding: 10px;
     }
 
     .metrics {
@@ -230,5 +261,17 @@
 @media (max-width: 460px) {
     .clients-list img{
         width: 150px;
+    }
+
+    .services__list{
+   
+        flex-direction: column;
+
+    }
+
+    .service{
+       width: 100%;
+       max-width: 300px;
+       margin: 0 auto;
     }
 }
